@@ -8,6 +8,9 @@ import java.util.logging.LogRecord;
 public class PleaseStfuFilter implements Filter {
 	private final String noisyBuggerName;
 
+	/**
+	 * @param noisyBuggerName The name of the offending class or module. The name may be partial
+	 */
 	public PleaseStfuFilter(final String noisyBuggerName) {
 		this.noisyBuggerName = noisyBuggerName;
 	}
